@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int height, row, col;
+
+    // Prompt user with a newline after
+    printf("Height?\n\n");
+    scanf("%d", &height);
+
+    // Outer loop for rows
+    for (row = 1; row <= height; row++) {
+        // Inner loop for columns
+        for (col = 1; col <= row; col++) {
+            printf("%d", row);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
